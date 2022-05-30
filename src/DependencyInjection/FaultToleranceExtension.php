@@ -14,6 +14,9 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
+/**
+ * @author Mojtaba Gheytasi <mjgheytasi@gmail.com>
+ */
 class FaultToleranceExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container)

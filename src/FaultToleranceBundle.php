@@ -13,6 +13,9 @@ use Bugloos\FaultToleranceBundle\DependencyInjection\FaultToleranceExtension;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
+/**
+ * @author Mojtaba Gheytasi <mjgheytasi@gmail.com>
+ */
 class FaultToleranceBundle extends Bundle
 {
     /**
