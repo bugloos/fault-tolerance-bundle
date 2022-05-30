@@ -15,7 +15,7 @@ Fault Tolerance Bundle
 <h2>Installation</h2>
 
 ```bash
-composer require bugloos/request-validator-bundle
+composer require bugloos/fault-tolerance-bundle
 ```
 
 <h2>Compatibility</h2>
