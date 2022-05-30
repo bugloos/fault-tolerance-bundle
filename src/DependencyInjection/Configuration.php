@@ -19,7 +19,7 @@ class Configuration implements ConfigurationInterface
 {
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder('fault_tolerance_breaker');
+        $treeBuilder = new TreeBuilder('bugloos_fault_tolerance');
 
         $rootNode = $treeBuilder->getRootNode();
 
