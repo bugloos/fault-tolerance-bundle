@@ -2,6 +2,9 @@
 Fault Tolerance Bundle
 </h2>
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/bugloos/fault-tolerance-bundle/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/bugloos/fault-tolerance-bundle/?branch=main)
+[![Build Status](https://scrutinizer-ci.com/g/bugloos/fault-tolerance-bundle/badges/build.png?b=main)](https://scrutinizer-ci.com/g/bugloos/fault-tolerance-bundle/build-status/main)
+
 <h2>What does it do? :)</h2>
 
 <p> - Circuit Breaker Pattern </p>
