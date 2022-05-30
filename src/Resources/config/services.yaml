@@ -1,0 +1,33 @@
+services:
+
+    Bugloos\FaultToleranceBundle\Factory\CommandFactory:
+        public: true
+        autowire: true
+        lazy: true
+        arguments:
+            $circuitBreakerFactory: '@Bugloos\FaultToleranceBundle\Factory\CircuitBreakerFactory'
+            $requestCacheFactory: '@Bugloos\FaultToleranceBundle\Factory\RequestCacheFactory'
+            $requestLog: '@Bugloos\FaultToleranceBundle\RequestLog\RequestLog'
+
+    Bugloos\FaultToleranceBundle\Factory\CircuitBreakerFactory:
+        arguments:
+            $storage: '@Bugloos\FaultToleranceBundle\CircuitBreaker\Storage\Storage'
+
+    Bugloos\FaultToleranceBundle\CircuitBreaker\Storage\Storage:
+        arguments:
+            $adapter: '@cache.app'
+
+    Bugloos\FaultToleranceBundle\Factory\RequestCacheFactory:
+        lazy: true
+        arguments:
+            $storageFactory: '@Bugloos\FaultToleranceBundle\RequestCache\Storage\CacheStorageFactory'
+
+    Bugloos\FaultToleranceBundle\RequestCache\Storage\CacheStorageFactory:
+        lazy: true
+        arguments:
+            $redisUrl: '%redis_url%'
+            $mongodbUrl: '%mongodb_url%'
+
+    Bugloos\FaultToleranceBundle\RequestLog\RequestLog: ~
+
+    Bugloos\FaultToleranceBundle\Factory\CommandFactoryInterface: '@Bugloos\FaultToleranceBundle\Factory\CommandFactory'

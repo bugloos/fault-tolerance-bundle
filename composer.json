@@ -1,0 +1,42 @@
+{
+    "name": "bugloos/fault-tolerance-bundle",
+    "description": "Fault Tolerance Bundle",
+    "type": "symfony-bundle",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Mojtaba Gheytasi",
+            "email": "mojtaba.g@bugloos.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Bugloos\\FaultToleranceBundle\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bugloos\\FaultToleranceBundle\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "symfony/framework-bundle": "^4.4 | ^5.4"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "phpmd/phpmd": "^2.10",
+        "squizlabs/php_codesniffer": "^3.6",
+        "phpunit/phpunit": "^9.5",
+        "symfony/yaml": "^5.3",
+        "symfony/serializer": "^5.3"
+    },
+    "conflict": {
+        "doctrine/orm": "<2.7",
+        "symfony/http-foundation": "<4.4",
+        "symfony/framework-bundle": "<4.4"
+    }
+}
