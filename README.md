@@ -48,3 +48,5 @@ allows a limited number of test requests to pass through it. If those requests s
 the circuit breaker resumes back to the normal operation. Otherwise, if there is a failure,
 the timeout period begins again.
 </p>
+
+Note: <h1>Documentation and automated tests are under construction</h1>
