@@ -49,4 +49,4 @@ the circuit breaker resumes back to the normal operation. Otherwise, if there is
 the timeout period begins again.
 </p>
 
-Note: <h1>Documentation and automated tests are under construction</h1>
+Note: <h4>Documentation and automated tests are under construction</h4>
