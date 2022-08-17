@@ -141,7 +141,7 @@ To manage configuration for each command you can use Config object in config pro
 
 Note: the config you set is merged with the default configs.
 
-###Request Cache
+<h3>Request Cache</h3>
 
 Request cache, when enabled, caches command execution result within a single HTTP request, so you don’t have to worry about loading data over network more than needed.
 
